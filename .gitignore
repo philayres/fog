@@ -11,8 +11,6 @@
 .idea
 .yardoc
 /tests/.fog
-bin/*
-!bin/fog
 coverage
 doc/*
 docs/_site/*
@@ -24,3 +22,6 @@ spec/credentials.yml
 vendor/*
 tags
 tests/digitalocean/fixtures/
+!/benchs/
+!/lib/*
+!/lib/fog/bin/rackspace.rb
