@@ -1,4 +1,4 @@
-*~
+*
 *.gem
 *.rbc
 *.sw?
@@ -24,3 +24,4 @@ spec/credentials.yml
 vendor/*
 tags
 tests/digitalocean/fixtures/
+!/lib/fog/
