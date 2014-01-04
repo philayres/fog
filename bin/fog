@@ -68,9 +68,9 @@ else
   providers = Fog.providers
 
   # FIXME: hacks until we can `include Fog` in bin
-  CDN     = Fog::CDN
-  Compute = Fog::Compute
-  DNS     = Fog::DNS
+  #CDN     = Fog::CDN
+  #Compute = Fog::Compute
+  #DNS     = Fog::DNS
   Storage = Fog::Storage
 
   catch(:IRB_EXIT) { @irb.eval_input }
