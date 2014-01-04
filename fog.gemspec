@@ -5,20 +5,20 @@ Gem::Specification.new do |s|
   ## Leave these as is they will be modified for you by the rake gemspec task.
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
-  s.name              = 'fog'
+  s.name              = 'fog-rackspace-cloud-files'
   s.version           = '1.19.0'
-  s.date              = '2013-12-19'
-  s.rubyforge_project = 'fog'
+  s.date              = '2014-01-04'
+  s.rubyforge_project = 'fog-rackspace-cloud-files'
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
   s.summary     = "brings clouds to you"
-  s.description = "The Ruby cloud services library. Supports all major cloud providers including AWS, Rackspace, Linode, Blue Box, StormOnDemand, and many others. Full support for most AWS services including EC2, S3, CloudWatch, SimpleDB, ELB, and RDS."
+  s.description = "The Ruby Rackspace Cloud Files services library based on Fog. "
 
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
-  s.authors  = ["geemus (Wesley Beary)"]
+  s.authors  = ["geemus (Wesley Beary)", "philayres (Phil Ayres)"]
   s.email    = 'geemus@gmail.com'
   s.homepage = 'http://github.com/fog/fog'
   s.license  = 'MIT'
@@ -42,13 +42,13 @@ Gem::Specification.new do |s|
   ## List your runtime dependencies here. Runtime dependencies are those
   ## that are needed for an end user to actually USE your code.
   s.add_dependency('builder')
-  s.add_dependency('excon', '~>0.31.0')
-  s.add_dependency('formatador', '~>0.2.0')
+  #s.add_dependency('excon', '~>0.31.0')
+  #s.add_dependency('formatador', '~>0.2.0')
   s.add_dependency('multi_json', '~>1.0')
   s.add_dependency('mime-types')
-  s.add_dependency('net-scp', '~>1.1')
-  s.add_dependency('net-ssh', '>=2.1.3')
-  s.add_dependency('nokogiri', '~>1.5')
+  #s.add_dependency('net-scp', '~>1.1')
+  #s.add_dependency('net-ssh', '>=2.1.3')
+  #s.add_dependency('nokogiri', '~>1.5')
 
   ## List your development dependencies here. Development dependencies are
   ## those that are only needed during development
@@ -62,7 +62,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('shindo', '~>0.3.4')
   s.add_development_dependency('fission')
   s.add_development_dependency('pry')
-  s.add_development_dependency('google-api-client', '~>0.6.2')
+  #s.add_development_dependency('google-api-client', '~>0.6.2')
   s.add_development_dependency('unf')
   if ENV["FOG_USE_LIBVIRT"] && RUBY_PLATFORM != 'java'
     s.add_development_dependency('ruby-libvirt','~>0.4.0')
